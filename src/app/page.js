@@ -2,7 +2,7 @@
 
 import useToggle from "@/lib/use-toogle";
 import styled from "styled-components";
-import { Header } from "@/components";
+import { Header, Footer } from "@/components";
 
 //--custom components
 const StyledBody = styled.div`
@@ -21,6 +21,7 @@ export default function Home() {
     content = (
       <>
         <Header toggleQuestions={toggleOpenQuestion} />
+        <Footer />
       </>
     );
   }
