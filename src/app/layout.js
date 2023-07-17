@@ -1,11 +1,12 @@
 "use client";
 
 // import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Open_Sans, Montserrat } from "next/font/google";
 import StyledComponentsRegistry from "@/lib/registry";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Manual Landing Page",
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <StyledComponentsRegistry>
         <GlobalStyle />
-        <body className={montserrat.className}>
+        <body style={montserrat.style} className={openSans.className}>
           <ThemeProvider theme={theme}>{children}</ThemeProvider>
         </body>
       </StyledComponentsRegistry>

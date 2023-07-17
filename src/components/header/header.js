@@ -2,18 +2,14 @@ import Image from "next/image";
 import { StyledHeader, StyledHeaderContent } from "./header.styled";
 import Container from "../container/container";
 
+import logo from "../../../public/img/logo.png";
+
 const Header = ({ toggleQuestions }) => {
   return (
     <StyledHeader>
       <Container>
         <div>
-          <Image
-            src="/img/logo.png"
-            alt="manual logo"
-            width="100"
-            height="100"
-            priority
-          />
+          <Image src={logo} alt="manual logo" />
         </div>
         <StyledHeaderContent>
           <h1>Be Good To Yourself</h1>

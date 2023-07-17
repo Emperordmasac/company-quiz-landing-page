@@ -2,11 +2,11 @@
 
 import useToggle from "@/lib/use-toogle";
 import styled from "styled-components";
-import { Header, Footer } from "@/components";
+import { Header, Footer, HelpList } from "@/components";
 
 //--custom components
 const StyledBody = styled.div`
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
 `;
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
     content = (
       <>
         <Header toggleQuestions={toggleOpenQuestion} />
+        <HelpList />
         <Footer />
       </>
     );
