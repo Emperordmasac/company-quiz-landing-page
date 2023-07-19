@@ -11,7 +11,9 @@ import { useState } from "react";
 import QuestionItem from "./question-item/question-item";
 
 const Questions = ({ toggleQuestions, questions }) => {
-  questions.forEach((question) => {
+  console.log("data --->", questions.questions);
+
+  questions.queestions.forEach((question) => {
     question.selected = {
       value: null,
       rejection: null,
